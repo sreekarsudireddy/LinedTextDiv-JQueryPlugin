@@ -1,10 +1,10 @@
-# Lined textarea using JQuery
+# Lined Div or Pre using JQuery
 
-A [JQuery](http://jquery.com/) plugin that replaces the textarea in the DOM with UI with line numbers and editor. This works with multiple textareas and have multiple themes (coming soon).
+A [JQuery](http://jquery.com/) plugin that replaces the div or pre in the DOM with UI with line numbers and editor. This works with multiple div's or pre's and have multiple themes (coming soon).
 
 ## Demo & Examples
 
-[http://www.techdining.com/plugins/jquery/lined-textarea](http://www.techdining.com/plugins/jquery/lined-textarea)
+[http://www.techdining.com/plugins/jquery/lined-textdiv](http://www.techdining.com/plugins/jquery/lined-textdiv)
 
 ## Dependency
 
@@ -16,9 +16,9 @@ Download both js and css files and use it where ever needed.
 (CDN Links coming soon)
 
 ```html
-<link href="linedTextArea-jquery.css" type="text/css" rel="stylesheet" />
+<link href="linedTextEditor-jquery.css" type="text/css" rel="stylesheet" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="linedTextArea-jquery.js"></script>
+<script src="linedTextEditor-jquery.js"></script>
 ```
 
 ## Example Usage
@@ -38,7 +38,7 @@ or
 ### JavaScript
 ```javascript
 $(function() {
-     $(".lined").linedTextArea();
+     $(".lined").linedTextEditor();
 });
 ```
 
@@ -48,7 +48,7 @@ This plugin accepts one parameter for now i.e., *selectedLine*.
  
 ```javascript
 $(function() {
-	$(".lined").linedTextArea({
+	$(".lined").linedTextEditor({
 		selectedLine: 20,
 	});
 });
