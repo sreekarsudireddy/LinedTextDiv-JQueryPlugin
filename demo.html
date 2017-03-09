@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>LinedTextArea Demo using JQuery</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="linedTextEditor-jquery.js"></script>
+    <link href="linedTextEditor-jquery.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div align="center">
+        <h1>LinedTextDiv Demo using JQuery</h1>
+        <p>Added a scrollable lined area to a standard div or pre control.</p>
+    </div>
+    <div style="width: 70%;margin: auto">
+        <pre class="lined">.lined-textarea-container {
+    width: 100%;
+    height: 300px;
+    font-size: 14px;
+    border: 1px solid #c0c0c0;
+    box-sizing: border-box;
+}
+
+.lined-textarea-container .lines {
+    float: left;
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: inherit;
+}
+
+.lined-textarea-container .lines .linesContainer {
+    box-sizing: inherit;
+    position: relative;
+    padding-top: 2px;
+    border-right: 1px solid #c0c0c0;
+}
+
+.lined-textarea-container .lines .linesContainer .line {
+    width: 100%;
+    display: block;
+    color: #999999;
+    text-align: right;
+    padding: 0px 3px;
+    line-height: 18px;
+    box-sizing: inherit;
+}
+
+.lined-textarea-container .lines .linesContainer .lineselect {
+    color: red;
+}
+
+.lined-textarea-container .lined-textarea {
+    float: left;
+    margin-left: 10px;
+    width: calc(100% - 60px);
+    height: 100%;
+    padding: 0;
+    box-sizing: inherit;
+    line-height: 18px;
+    border: 0;
+    resize: none;
+}
+
+.lined-textarea-container .lined-textarea:focus {
+    outline: none;
+}
+
+.lined-textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #FFF;
+}
+
+.lined-textarea::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #FFF;
+}
+
+.lined-textarea::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+}</pre>
+    </div>
+    <div align="center">
+        <p>Visit <a href="http://www.techdining.com/plugins/jquery/lined-textdiv" target="_blank">http://www.techdining.com/plugins/jquery/lined-textdiv</a> for details and download</p>
+    </div>
+
+    <script>
+        $(function() {
+            $(".lined").linedTextEditor();
+        });
+    </script>
+
+</body>
+
+</html>
