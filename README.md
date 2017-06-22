@@ -1,4 +1,4 @@
-# Lined Text Div using JQuery
+# Lined Div or Pre using JQuery
 
 A [JQuery](http://jquery.com/) plugin that replaces the div or pre in the DOM with UI with line numbers and editor. This works with multiple div's or pre's and have multiple themes (coming soon).
 
